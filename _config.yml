@@ -1,0 +1,54 @@
+# Remote theme directory
+remote_theme: analytics-link/analytics-link.github.io
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-remote-theme
+
+#-------------------------------
+# General Site Settings
+title: Divyanshu Bhartiya
+description: "Hi, I'm Divyanshu - a Data & AI Engineer based in London. My portfolio focuses on interesting, value-adding data science and AI projects I've undertaken, with a strong emphasis on business impact. Please visit my GitHub & LinkedIn pages (or download my Resume) using the links below!"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+#-------------------------------
+# About Section
+subtitle: Data Science & AI <span style="color:#f58506"> Portfolio </span>
+location: "London, UK"
+resume_url: /docs/Divyanshu_Bhartiya_Resume.pdf
+avatar_image: /img/profile_picture.JPG
+
+#-------------------------------
+# Contact links
+linkedin: "https://www.linkedin.com/in/divb02" # Add your linkedin handle
+github: "https://github.com/divyanshubhartiya02"  # Add your github handle
+
+paginate: 10
+paginate_path: "/page/:num"
+
+sass:
+  sass_dir: _sass
+  style: compressed # possible values: nested expanded compact compressed
+
+defaults:
+  - scope:
+      type: posts
+    values:
+      layout: post
+      read_time: true
+      share: false
+
+
+#-------------------------------
+# Exclude from processing.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
